@@ -1,54 +1,83 @@
-# Python-Project
+# 🐍 Python Utility Scripts
 
+This repository contains four Python scripts designed for various practical tasks: desktop notifications, QR code generation, text-to-speech, and WhatsApp automation.
 
-This repository contains two simple Python scripts:
-1. **Notification Script**: A script that sends periodic desktop notifications.
-2. **QR Code Generator**: A script that generates a QR code from a given string.
+## 📂 Scripts Overview
 
-## Notification Script (`notification.py`)
-
-This script uses the `plyer` library to send desktop notifications at regular intervals. It is useful for reminders or alerts.
-
-### Features
-- Sends a desktop notification every 30 seconds.
-- Customizable title and message.
-
-### Requirements
-- `plyer`
-
-You can install the required library using pip:
-```bash
-pip install plyer
+```plaintext
+| Script                | Description                                          |
+|-----------------------|------------------------------------------------------|
+| notification.py       | Sends periodic desktop notifications.               |
+| QR.py                 | Generates a QR code from a given string.            |
+| edith.py              | A text-to-speech virtual assistant using pyttsx3.   |
+| whatsapp.py           | Sends scheduled WhatsApp messages using pywhatkit. |
 ```
- 
 
 ---
 
-## QR Code Generator (`QR.py`)
+## 🛎️ notification.py — Desktop Notification Script
 
-This script uses the `qrcode` library to generate a QR code from a given string and saves it as an image file.
+### 📦 Requirements
 
-### Features
-- Generates a QR code from a string.
-- Saves the QR code as an image file.
+To install the required library:
+```bash
+pip install plyer
+```
 
-### Requirements
-- `qrcode`
-- `Pillow` (for image handling)
+---
 
-You can install the required libraries using pip:
+## 🔲 QR.py — QR Code Generator
+
+
+### 📦 Requirements
+
+To install the required libraries:
 ```bash
 pip install qrcode[pil]
 ```
 
+---
 
-## Contributing
-
-Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
+## 🗣️ edith.py — Text-to-Speech Assistant
 
 
-## Acknowledgments
+### 📦 Requirements
 
-- **Plyer**: For providing the notification functionality.
-- **QRCode**: For the QR code generation library.
-- **Pillow**: For image handling in the QR code script.
+To install the required library:
+```bash
+pip install pyttsx3
+```
+
+---
+
+## 📱 whatsapp.py — WhatsApp Message Sender
+
+### 📦 Requirements
+
+To install the required library:
+```bash
+pip install pywhatkit
+```
+
+### ⚠️ Notes:
+- Ensure you’re logged into WhatsApp Web in your default browser.
+- The script requires an internet connection and accurate system time.
+- Schedule the message at least 1–2 minutes ahead of the current time to ensure it sends correctly.
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork the repository, open issues, and submit pull requests. Contributions are welcome!
+
+---
+
+## 🙏 Acknowledgments
+
+- **Plyer**: For desktop notification support.
+- **QRCode**: For generating QR codes.
+- **Pillow**: For handling image files.
+- **pyttsx3**: For offline text-to-speech conversion.
+- **PyWhatKit**: For WhatsApp automation and other utilities.
+
+---
